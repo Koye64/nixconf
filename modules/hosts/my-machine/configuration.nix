@@ -52,9 +52,14 @@
   
     # Define a user account. Don't forget to set a password with ‘passwd’.
     users.users.koye = {
+      description = "Koye";
       isNormalUser = true;
+      hashedPassword = "$y$j9T$TO9.QgDIlS8ev.Oj51y.y.$hSYCWzfa7eHLnIBUHQYaSOOoZWjL6WuZnVpxCk9uWZC";
+      shell = pkgs.fish;
       extraGroups = [ "wheel" ]; # Enable ‘sudo’ for the user.
     };
+
+    programs.fish.enable = true;
   
     # programs.firefox.enable = true;
   
