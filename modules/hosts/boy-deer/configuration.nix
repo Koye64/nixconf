@@ -1,16 +1,17 @@
 { self, inputs, ... }: {
-  flake.nixosModules.myMachineConfiguration = { pkgs, lib, ... }: {
+  flake.nixosModules.boyDeerConfiguration = { pkgs, lib, ... }: {
     imports = [
-      self.nixosModules.myMachineHardware
+      self.nixosModules.boyDeerHardware
       self.nixosModules.shell
       self.nixosModules.niri
+      self.nixosModules.vencord
     ];
 
     programs.niri = {
       package = self.packages.${pkgs.stdenv.hostPlatform.system}.myNiri.wrap {
         settings = {
 	  outputs = {
-	    "Virtual-1" = {
+	    "DP-1" = {
 	      position = _: {
 	        props = {
 		  x = 0;
@@ -18,7 +19,17 @@
 		};
 	      };
 	      scale = 1;
-	      mode = "1920x1080";
+	      mode = "2560x1440@280.000";
+	    };
+	    "HDMI-A-1" = {
+	      position = _: {
+	        props = {
+		  x = 2560;
+		  y = 0;
+		};
+	      };
+	      scale = 1;
+	      mode = "1920x1080@143.999";
 	    };
 	  };
 	};
@@ -31,7 +42,7 @@
     boot.loader.systemd-boot.enable = true;
     boot.loader.efi.canTouchEfiVariables = true;
   
-    networking.hostName = "myMachine"; # Define your hostname.
+    networking.hostName = "boy-deer"; # Define your hostname.
   
     networking.networkmanager.enable = true;
   

@@ -1,4 +1,16 @@
 { self, inputs, ... }: {
+  flake.nixosModules.niri = { pkgs, lib, ... }: {
+    programs.niri = {
+      enable = true;
+      package = lib.mkDefault self.packages.${pkgs.stdenv.hostPlatform.system}.myNiri;
+    };
+    services.dbus.implementation = "broker";
+    environment.systemPackages = [
+      pkgs.ghostty
+      pkgs.nautilus
+    ];
+  };
+
   perSystem = { pkgs, lib, self', ... }: {
     packages.myNiri = inputs.wrapper-modules.wrappers.niri.wrap {
       inherit pkgs;
@@ -89,7 +101,7 @@
 	      allow-when-locked = true;
 	    };
 	    content = {
-	      spawn-sh = "wpctl set-volume @DEFAULT_AUDIO_SINK@ 0.1+ -l 1.0";
+	      spawn-sh = "wpctl set-volume @DEFAULT_AUDIO_SINK@ 0.02+ -l 1.0";
 	    };
 	  };
 	  "XF86AudioLowerVolume" = _: {
@@ -97,7 +109,7 @@
 	      allow-when-locked = true;
 	    };
 	    content = {
-	      spawn-sh = "wpctl set-volume @DEFAULT_AUDIO_SINK@ 0.1-";
+	      spawn-sh = "wpctl set-volume @DEFAULT_AUDIO_SINK@ 0.02-";
 	    };
 	  };
 	  "XF86AudioMute" = _: {
