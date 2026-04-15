@@ -233,13 +233,13 @@
 	  "Mod+P".focus-workspace-up = _: {};
 	  "Mod+Ctrl+Page_Down".move-column-to-workspace-down = _: {};
 	  "Mod+Ctrl+Page_Up".move-column-to-workspace-up = _: {};
-	  "Mod+Ctrl+U".move-column-to-workspace-down = _: {};
-	  "Mod+Ctrl+I".move-column-to-workspace-up = _: {};
+	  "Mod+Ctrl+N".move-column-to-workspace-down = _: {};
+	  "Mod+Ctrl+P".move-column-to-workspace-up = _: {};
 
 	  "Mod+Shift+Page_Down".move-workspace-down = _: {};
 	  "Mod+Shift+Page_Up".move-workspace-up = _: {};
-	  "Mod+Shift+U".move-workspace-down = _: {};
-	  "Mod+Shift+I".move-workspace-up = _: {};
+	  "Mod+Shift+N".move-workspace-down = _: {};
+	  "Mod+Shift+P".move-workspace-up = _: {};
 
 	  "Mod+WheelScrollDown" = _: {
 	    props = {
