@@ -2,10 +2,11 @@
   flake.nixosModules.boyDeerConfiguration = { pkgs, lib, ... }: {
     imports = [
       self.nixosModules.boyDeerHardware
-        self.nixosModules.shell
-        self.nixosModules.niri
-        self.nixosModules.vencord
-        self.nixosModules.steam
+      self.nixosModules.shell
+      self.nixosModules.niri
+      self.nixosModules.vencord
+      self.nixosModules.steam
+      self.nixosModules.myHomeManager
     ];
 
     programs.niri = {
@@ -36,10 +37,6 @@
         };
       };
     };
-
-    environment.systemPackages = [
-      pkgs.easyeffects
-    ];
 
     nixpkgs.config.allowUnfree = true;
     nix.settings.experimental-features = [ "nix-command" "flakes" ];

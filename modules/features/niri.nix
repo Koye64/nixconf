@@ -4,15 +4,18 @@
       enable = true;
       package = lib.mkDefault self.packages.${pkgs.stdenv.hostPlatform.system}.myNiri;
     };
+
     services.dbus.implementation = "broker";
     services.udisks2.enable = true;
+
     environment.systemPackages = [
       pkgs.ghostty
-        pkgs.nautilus
+      pkgs.nautilus
+      pkgs.easyeffects
     ];
   };
 
-  perSystem = { pkgs, lib, self', ... }: 
+  perSystem = { pkgs, lib, self', ... }:
   let
     myNoctalia = self'.packages.myNoctalia;
   in {
@@ -22,6 +25,7 @@
         spawn-at-startup = [
           (lib.getExe myNoctalia)
           (lib.getExe pkgs.udiskie)
+          [ (lib.getExe pkgs.easyeffects) "--service-mode" ]
         ];
 
         xwayland-satellite.path = lib.getExe pkgs.xwayland-satellite;
