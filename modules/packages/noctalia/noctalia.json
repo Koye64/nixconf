@@ -200,8 +200,8 @@
       "showSessionButtonsOnLockScreen": true,
       "showHibernateOnLockScreen": false,
       "enableLockScreenMediaControls": false,
-      "enableShadows": true,
-      "enableBlurBehind": true,
+      "enableShadows": false,
+      "enableBlurBehind": false,
       "shadowDirection": "center",
       "shadowOffsetX": 0,
       "shadowOffsetY": 0,
@@ -252,8 +252,8 @@
       "fontDefaultScale": 1,
       "fontFixedScale": 1,
       "tooltipsEnabled": true,
-      "scrollbarAlwaysVisible": true,
-      "boxBorderEnabled": false,
+      "scrollbarAlwaysVisible": false,
+      "boxBorderEnabled": true,
       "panelBackgroundOpacity": 0.93,
       "translucentWidgets": false,
       "panelsAttachedToBar": true,
@@ -703,38 +703,38 @@
     "desktopWidgetsEditMode": false,
     "display": {
       "DP-1": {
-        "name": "DP-1",
         "connected": true,
-        "scale": 1,
-        "width": 2560,
         "height": 1440,
-        "x": 0,
-        "y": 0,
-        "physical_width": 590,
+        "name": "DP-1",
         "physical_height": 330,
+        "physical_width": 590,
         "refresh_rate": 280000,
-        "vrr_supported": true,
+        "scale": 1,
+        "transform": "Normal",
         "vrr_enabled": false,
-        "transform": "Normal"
+        "vrr_supported": true,
+        "width": 2560,
+        "x": 0,
+        "y": 0
       },
       "HDMI-A-1": {
-        "name": "HDMI-A-1",
         "connected": true,
-        "scale": 1,
-        "width": 1920,
         "height": 1080,
-        "x": 2560,
-        "y": 0,
-        "physical_width": 530,
+        "name": "HDMI-A-1",
         "physical_height": 300,
+        "physical_width": 530,
         "refresh_rate": 143999,
-        "vrr_supported": true,
+        "scale": 1,
+        "transform": "Normal",
         "vrr_enabled": false,
-        "transform": "Normal"
+        "vrr_supported": true,
+        "width": 1920,
+        "x": 2560,
+        "y": 0
       }
     },
     "notificationsState": {
-      "lastSeenTs": 1776221816000
+      "lastSeenTs": 1776236975000
     },
     "changelogState": {
       "lastSeenVersion": "v4.7.5"
