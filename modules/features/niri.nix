@@ -5,18 +5,23 @@
       package = lib.mkDefault self.packages.${pkgs.stdenv.hostPlatform.system}.myNiri;
     };
     services.dbus.implementation = "broker";
+    services.udisks2.enable = true;
     environment.systemPackages = [
       pkgs.ghostty
         pkgs.nautilus
     ];
   };
 
-  perSystem = { pkgs, lib, self', ... }: {
+  perSystem = { pkgs, lib, self', ... }: 
+  let
+    myNoctalia = self'.packages.myNoctalia;
+  in {
     packages.myNiri = inputs.wrapper-modules.wrappers.niri.wrap {
       inherit pkgs;
       settings = {
         spawn-at-startup = [
-          (lib.getExe self'.packages.myNoctalia)
+          (lib.getExe myNoctalia)
+          (lib.getExe pkgs.udiskie)
         ];
 
         xwayland-satellite.path = lib.getExe pkgs.xwayland-satellite;
@@ -47,7 +52,7 @@
 
         overview = {
           workspace-shadow.off = _: {};
-          backdrop-color = "#000000";
+          backdrop-color = "#0f0f0f";
         };
 
         layout = {

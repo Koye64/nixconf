@@ -26,7 +26,7 @@
               position = _: {
                 props = {
                   x = 2560;
-                  y = 0;
+                  y = 180;
                 };
               };
               scale = 1;
@@ -89,4 +89,4 @@
 
     system.stateVersion = "25.11"; # Did you read the comment?
   };
-                       }
+}
