@@ -43,7 +43,7 @@
         ls = "${lib.getExe pkgs.eza} --icons=auto";
         ll = "ls -lh";
         la = "ll -A";
-        tree = "ls --tree";
+        lt = "ls --tree";
         lg = "lazygit";
       };
     };
