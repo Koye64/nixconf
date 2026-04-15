@@ -17,34 +17,34 @@
   perSystem = { pkgs, lib, self', ... }: {
     packages.myShell = inputs.wrapper-modules.wrappers.zsh.wrap {
       inherit pkgs;
-      
+
       extraPackages = [
-	# nix
-	# self'.packages.nh
-	pkgs.nh
+        # nix
+        # self'.packages.nh
+        pkgs.nh
 
-	# utilities
+        # utilities
         pkgs.file
-	pkgs.zip
-	pkgs.unzip
-	pkgs.fzf
-	# self'.packages.git
-	pkgs.git
-	pkgs.lazygit
-	# self'.packages.btop
-	pkgs.imagemagick
-	# self'.packages.fastfetch
+        pkgs.zip
+        pkgs.unzip
+        pkgs.fzf
+        # self'.packages.git
+        pkgs.git
+        pkgs.lazygit
+        # self'.packages.btop
+        pkgs.imagemagick
+        # self'.packages.fastfetch
 
-	# self'.packages.neovim
-	pkgs.neovim
+        # self'.packages.neovim
+        pkgs.neovim
       ];
 
       zshAliases = {
-	ls = "${lib.getExe pkgs.eza} --icons=auto";
-	ll = "ls -lh";
-	la = "ll -A";
-	tree = "ls --tree";
-	lg = "lazygit";
+        ls = "${lib.getExe pkgs.eza} --icons=auto";
+        ll = "ls -lh";
+        la = "ll -A";
+        tree = "ls --tree";
+        lg = "lazygit";
       };
     };
   };

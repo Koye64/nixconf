@@ -3,9 +3,9 @@
     programs = {
       steam = {
         enable = true;
-	extraPackages = with pkgs; [
-	  gamescope
-	];
+        extraPackages = with pkgs; [
+          gamescope
+        ];
       };
     };
   };

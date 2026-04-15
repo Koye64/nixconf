@@ -9,19 +9,19 @@
     programs.niri = {
       package = self.packages.${pkgs.stdenv.hostPlatform.system}.myNiri.wrap {
         settings = {
-	  outputs = {
-	    "Virtual-1" = {
-	      position = _: {
-	        props = {
-		  x = 0;
-		  y = 0;
-		};
-	      };
-	      scale = 1;
-	      mode = "1920x1080";
-	    };
-	  };
-	};
+          outputs = {
+            "Virtual-1" = {
+              position = _: {
+                props = {
+                  x = 0;
+                  y = 0;
+                };
+              };
+              scale = 1;
+              mode = "1920x1080";
+            };
+          };
+        };
       };
     };
 
@@ -31,27 +31,27 @@
     # Use the systemd-boot EFI boot loader.
     boot.loader.systemd-boot.enable = true;
     boot.loader.efi.canTouchEfiVariables = true;
-  
+
     networking.hostName = "myMachine"; # Define your hostname.
-  
+
     networking.networkmanager.enable = true;
-  
+
     time.timeZone = "America/Phoenix";
-  
+
     i18n.defaultLocale = "en_US.UTF-8";
     console = {
       font = "Lat2-Terminus16";
       keyMap = "us";
       useXkbConfig = false; # use xkb.options in tty.
     };
-  
+
     services.pipewire = {
       enable = true;
       pulse.enable = true;
     };
-  
+
     services.libinput.enable = true;
-  
+
     users.users.koye = {
       description = "Koye";
       isNormalUser = true;
@@ -60,7 +60,7 @@
     };
 
     programs.fish.enable = true;
-  
+
     programs.firefox.enable = true;
 
     programs.mtr.enable = true;
@@ -68,9 +68,9 @@
       enable = true;
       enableSSHSupport = true;
     };
-  
+
     services.openssh.enable = true;
-  
+
     system.stateVersion = "25.11"; # Did you read the comment?
   };
 }
