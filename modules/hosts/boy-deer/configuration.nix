@@ -6,7 +6,6 @@
       self.nixosModules.niri
       self.nixosModules.vencord
       self.nixosModules.steam
-      self.nixosModules.myHomeManager
     ];
 
     programs.niri = {
