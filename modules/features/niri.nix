@@ -6,7 +6,11 @@
     };
 
     services.dbus.implementation = "broker";
+
     services.udisks2.enable = true;
+
+    services.power-profiles-daemon.enable = true;
+    services.upower.enable = true;
 
     environment.systemPackages = [
       pkgs.ghostty
@@ -195,7 +199,7 @@
             };
           };
 
-          "Mod+O" = _: {
+          "Mod+W" = _: {
             props = { repeat = false; };
             content = { toggle-overview = _: {}; };
           };
@@ -349,7 +353,7 @@
           "Mod+V".toggle-window-floating = _: {};
           "Mod+Shift+V".switch-focus-between-floating-and-tiling = _: {};
 
-          "Mod+W".toggle-column-tabbed-display = _: {};
+          # "Mod+W".toggle-column-tabbed-display = _: {};
 
           "Mod+Shift+S".screenshot = _: {};
           "Mod+Shift+D".screenshot-screen = _: {};
