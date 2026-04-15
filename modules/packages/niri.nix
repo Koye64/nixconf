@@ -14,6 +14,11 @@
 
         xwayland-satellite.path = lib.getExe pkgs.xwayland-satellite;
 
+        cursor = {
+          xcursor-theme = self.cursor.name;
+          xcursor-size = self.cursor.size;
+        };
+
         input = {
           keyboard = {
             xkb.layout = "us";
