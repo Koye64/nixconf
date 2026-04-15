@@ -45,9 +45,16 @@
           workspace-auto-back-and-forth = _: {};
         };
 
+        overview = {
+          workspace-shadow.off = _: {};
+          backdrop-color = "#000000";
+        };
+
         layout = {
           gaps = 8;
           center-focused-column = "never";
+
+          background-color = "#000000";
 
           preset-column-widths = [
             { proportion = 0.25; }
