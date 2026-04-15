@@ -5,6 +5,7 @@
       self.nixosModules.shell
       self.nixosModules.niri
       self.nixosModules.vencord
+      self.nixosModules.steam
     ];
 
     programs.niri = {
