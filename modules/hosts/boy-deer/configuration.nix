@@ -7,7 +7,12 @@
       self.nixosModules.vencord
       self.nixosModules.steam
       self.nixosModules.hummingbird
-      self.nixosMoudles.syncthing
+      self.nixosModules.syncthing
+    ];
+
+    environment.systemPackages = [
+      pkgs.godotPackages_4_6.godot
+      pkgs.blender-hip
     ];
 
     programs.niri = {
