@@ -7,6 +7,7 @@
       self.nixosModules.vencord
       self.nixosModules.steam
       self.nixosModules.hummingbird
+      self.nixosMoudles.syncthing
     ];
 
     programs.niri = {
