@@ -14,6 +14,8 @@
 
         xwayland-satellite.path = lib.getExe pkgs.xwayland-satellite;
 
+        prefer-no-csd = _: {};
+
         cursor = {
           xcursor-theme = self.cursor.name;
           xcursor-size = self.cursor.size;
