@@ -9,7 +9,7 @@
         spawn-at-startup = [
           (lib.getExe myNoctalia)
           (lib.getExe' pkgs.udiskie "udiskie")
-          [ (lib.getExe pkgs.easyeffects) "--service-mode" ]
+          [ (lib.getExe pkgs.easyeffects) "--service-mode" "-w" ]
         ];
 
         xwayland-satellite.path = lib.getExe pkgs.xwayland-satellite;
