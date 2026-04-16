@@ -12,7 +12,9 @@
 
     environment.systemPackages = [
       pkgs.godotPackages_4_6.godot
-      pkgs.blender-hip
+      (pkgs.blender.override {
+        rocmSupport = true;
+      })
     ];
 
     programs.niri = {
