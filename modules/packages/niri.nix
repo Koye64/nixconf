@@ -22,6 +22,10 @@
         };
 
         input = {
+          tablet = {
+            map-to-output = "DP-1";
+          };
+
           keyboard = {
             xkb.layout = "us";
             numlock = _: {};
