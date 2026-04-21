@@ -8,6 +8,22 @@
       EDITOR = lib.getExe pkgs.neovim;
       VISUAL = lib.getExe pkgs.neovim;
     };
+    environment.systemPackages = with pkgs; [
+      nh
+
+      fastfetch
+      hyfetch
+
+      file
+      zip
+      unzip
+      fzf
+
+      git
+      lazygit
+
+      imagemagick
+    ];
 
     programs.zsh = {
       syntaxHighlighting.enable = true;
