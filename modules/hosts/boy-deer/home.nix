@@ -1,10 +1,20 @@
 { self, inputs, ... }: {
   flake.homeModules.koyeModule = { pkgs, ... }: {
-    imports = [
-      self.homeModules.cursor
-      self.homeModules.niri
-      self.homeModules.dms
+    imports = with self.homeModules; [
+      cursor
+      niri
+      dms
+      catppuccin
+      cava
     ];
     home.stateVersion = "26.05";
+
+    programs.ghostty = {
+      enable = true;
+    };
+
+    programs.bat = {
+      enable = true;
+    };
   };
 }

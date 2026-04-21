@@ -1,14 +1,15 @@
 { self, inputs, ... }: {
   flake.nixosModules.boyDeerConfiguration = { pkgs, lib, ... }: {
-    imports = [
-      self.nixosModules.boyDeerHardware
-      self.nixosModules.shell
-      self.nixosModules.niri
-      self.nixosModules.vencord
-      self.nixosModules.steam
-      self.nixosModules.hummingbird
-      self.nixosModules.syncthing
-      self.nixosModules.dms
+    imports = with self.nixosModules; [
+      boyDeerHardware
+      shell
+      niri
+      vencord
+      steam
+      hummingbird
+      syncthing
+      dms
+      catppuccin
     ];
 
     environment.systemPackages = [

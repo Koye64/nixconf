@@ -20,7 +20,6 @@
     programs.niri.package = pkgs.niri-unstable;
 
     environment.systemPackages = with pkgs; [
-      ghostty
       nautilus
       easyeffects
       wl-clipboard
