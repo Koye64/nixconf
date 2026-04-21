@@ -1,5 +1,5 @@
 { self, inputs, ... }: let
-  size = 28;
+  size = 24;
   name = "Bibata-Modern-Classic";
 in {
   flake.homeModules.cursor = { pkgs, ... }: {

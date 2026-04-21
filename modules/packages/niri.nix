@@ -80,7 +80,16 @@
 
         window-rules = [
         {
-          geometry-corner-radius = 12;
+          geometry-corner-radius =
+          let
+            r = 12.0;
+          in
+          {
+            top-left = r;
+            top-right = r;
+            bottom-left = r;
+            bottom-right = r;
+          };
           clip-to-geometry = true;
         }
         {
@@ -88,8 +97,6 @@
             { app-id = "r#\"firefox$\""; }
             { title = "^Picture-in-Picture$"; }
           ];
-          geometry-corner-radius = 0;
-          clip-to-geometry = false;
           open-floating = true;
         }
         ];

@@ -8,6 +8,7 @@
       self.nixosModules.steam
       self.nixosModules.hummingbird
       self.nixosModules.syncthing
+      self.nixosModules.dms
     ];
 
     environment.systemPackages = [
@@ -16,35 +17,6 @@
         rocmSupport = true;
       })
     ];
-
-    programs.niri = {
-      package = self.packages.${pkgs.stdenv.hostPlatform.system}.myNiri.wrap {
-        settings = {
-          outputs = {
-            "DP-1" = {
-              position = _: {
-                props = {
-                  x = 0;
-                  y = 0;
-                };
-              };
-              scale = 1;
-              mode = "2560x1440@280.000";
-            };
-            "HDMI-A-1" = {
-              position = _: {
-                props = {
-                  x = 2560;
-                  y = 180;
-                };
-              };
-              scale = 1;
-              mode = "1920x1080@143.999";
-            };
-          };
-        };
-      };
-    };
 
     nixpkgs.config.allowUnfree = true;
     nix.settings.experimental-features = [ "nix-command" "flakes" ];
