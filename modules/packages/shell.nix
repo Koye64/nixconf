@@ -8,6 +8,9 @@
         # self'.packages.nh
         pkgs.nh
 
+        pkgs.fastfetch
+        pkgs.hyfetch
+
         # utilities
         pkgs.file
         pkgs.zip
