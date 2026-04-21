@@ -10,6 +10,7 @@
       syncthing
       dms
       catppuccin
+      appimage
     ];
 
     environment.systemPackages = [
