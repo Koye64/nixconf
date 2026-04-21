@@ -44,9 +44,16 @@
           workspace-auto-back-and-forth = true;
         };
 
+        overview = {
+          workspace-shadow.enable = false;
+          backdrop-color = "#09070D";
+        };
+
+        layout.background-color = "#1a1724";
+
         layout.focus-ring = {
-          active.color = "#7fc8ff";
-          inactive.color = "#505050";
+          active.color = "#b8a8f0";
+          inactive.color = "#221f26";
         };
 
         window-rules = [

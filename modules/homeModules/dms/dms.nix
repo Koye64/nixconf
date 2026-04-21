@@ -19,10 +19,9 @@
       settings = (builtins.fromJSON
         (builtins.readFile ./settings.json)
       );
-
-      session = {
-        isLightMode = false;
-      };
+      session = (builtins.fromJSON
+        (builtins.readFile ./session.json)
+      );
 
       niri = {
         includes.enable = true;

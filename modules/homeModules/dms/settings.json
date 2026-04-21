@@ -39,8 +39,8 @@
   "modalCustomAnimationDuration": 150,
   "enableRippleEffects": true,
   "wallpaperFillMode": "Fill",
-  "blurredWallpaperLayer": true,
-  "blurWallpaperOnOverview": true,
+  "blurredWallpaperLayer": false,
+  "blurWallpaperOnOverview": false,
   "showLauncherButton": true,
   "showWorkspaceSwitcher": true,
   "showFocusedWindow": true,
@@ -407,9 +407,7 @@
   "updaterTerminalAdditionalParams": "",
   "displayNameMode": "system",
   "screenPreferences": {
-    "wallpaper": [
-      "all"
-    ]
+    "wallpaper": []
   },
   "showOnLastDisplay": {},
   "niriOutputSettings": {},
