@@ -18,11 +18,14 @@
       zip
       unzip
       fzf
+      eza
 
       git
       lazygit
 
       imagemagick
+
+      neovim
     ];
 
     programs.zsh = {
@@ -32,6 +35,16 @@
         strategy = [ "completion" "history" ];
       };
       enableBashCompletion = true;
+    };
+
+    environment.shellAliases = {
+      l = null;
+      ls = "eza --icons=auto";
+      ll = "ls -l";
+      la = "ll -a";
+      lt = "ls --tree";
+
+      lg = "lazygit";
     };
 
     programs.starship = {
