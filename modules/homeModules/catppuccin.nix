@@ -12,6 +12,9 @@
       bat.enable = true;
       cava.enable = true;
       ghostty.enable = true;
+      gtk.icon.enable = true;
     };
+
+    gtk.enable = true;
   };
 }
