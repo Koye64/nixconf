@@ -1,5 +1,5 @@
 { self, inputs, ... }: {
-  flake.nixosModules.steam = { pkgs, lib, ... }: {
+  flake.nixosModules.games = { pkgs, lib, ... }: {
     programs = {
       steam = {
         enable = true;
@@ -8,5 +8,9 @@
         ];
       };
     };
+
+    environment.systemPackages = with pkgs; [
+      pkgs.ryubing
+    ];
   };
 }

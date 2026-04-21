@@ -5,7 +5,7 @@
       shell
       niri
       vencord
-      steam
+      games
       hummingbird
       syncthing
       dms
