@@ -372,7 +372,7 @@
   "notificationHistorySaveNormal": true,
   "notificationHistorySaveCritical": true,
   "notificationRules": [],
-  "osdAlwaysShowValue": false,
+  "osdAlwaysShowValue": true,
   "osdPosition": 5,
   "osdVolumeEnabled": true,
   "osdMediaVolumeEnabled": true,
@@ -445,6 +445,7 @@
         "workspaceSwitcher",
         "focusedWindow"
       ],
+      "maximizeDetection": false,
       "maximizeWidgetIcons": false,
       "maximizeWidgetText": false,
       "name": "Main Bar",
@@ -473,8 +474,7 @@
       "visible": true,
       "widgetOutlineColor": "primary",
       "widgetOutlineEnabled": false,
-      "widgetTransparency": 1,
-      "maximizeDetection": false
+      "widgetTransparency": 1
     }
   ],
   "desktopClockEnabled": false,
