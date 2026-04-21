@@ -11,6 +11,8 @@
       "Mod+E".action.spawn = [ "dms" "ipc" "powermenu" "toggle" ];
     };
 
+    xdg.configFile."DankMaterialShell/themes".source = ./themes;
+
     programs.dank-material-shell = {
       enable = true;
 

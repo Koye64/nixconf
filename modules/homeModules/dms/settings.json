@@ -473,7 +473,8 @@
       "visible": true,
       "widgetOutlineColor": "primary",
       "widgetOutlineEnabled": false,
-      "widgetTransparency": 1
+      "widgetTransparency": 1,
+      "maximizeDetection": false
     }
   ],
   "desktopClockEnabled": false,
