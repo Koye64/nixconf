@@ -70,7 +70,9 @@
   "searchAppActions": true,
   "vpnLastConnected": "",
   "deviceMaxVolumes": {},
-  "hiddenOutputDeviceNames": [],
+  "hiddenOutputDeviceNames": [
+    "easyeffects_sink"
+  ],
   "hiddenInputDeviceNames": [],
   "launcherLastMode": "all",
   "appDrawerLastMode": "apps",
