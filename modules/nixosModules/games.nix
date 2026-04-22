@@ -11,6 +11,7 @@
 
     environment.systemPackages = with pkgs; [
       pkgs.ryubing
+      pkgs.itch
     ];
   };
 }
