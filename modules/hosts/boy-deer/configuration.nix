@@ -11,6 +11,7 @@
       dms
       catppuccin
       appimage
+      otherDesktop
     ];
 
     environment.systemPackages = [
