@@ -12,6 +12,7 @@
       catppuccin
       appimage
       otherDesktop
+      firefox
     ];
 
     environment.systemPackages = [
@@ -56,8 +57,6 @@
     };
 
     programs.fish.enable = true;
-
-    programs.firefox.enable = true;
 
     programs.mtr.enable = true;
     programs.gnupg.agent = {
