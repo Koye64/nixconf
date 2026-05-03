@@ -5,7 +5,14 @@
     import-tree.url = "github:vic/import-tree";
     wrapper-modules.url = "github:BirdeeHub/nix-wrapper-modules";
     catppuccin.url = "github:catppuccin/nix";
-    hummingbird.url = "https://codeberg.org/hummingbird/hummingbird/archive/master.tar.gz";
+    ryubing = {
+      url = "https://git.ryujinx.app/projects/Ryubing/archive/master.tar.gz";
+      flake = false;
+    };
+    hummingbird = {
+      url = "https://codeberg.org/hummingbird/hummingbird/archive/master.tar.gz";
+      inputs.nixpkgs.follows = "nixpkgs";
+    };
     niri = {
       url = "github:sodiboo/niri-flake";
       inputs.nixpkgs.follows = "nixpkgs";
