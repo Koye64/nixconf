@@ -5,7 +5,7 @@
     import-tree.url = "github:vic/import-tree";
     wrapper-modules.url = "github:BirdeeHub/nix-wrapper-modules";
     catppuccin.url = "github:catppuccin/nix";
-    hummingbird-player.url = "github:hummingbird-player/hummingbird";
+    hummingbird.url = "https://codeberg.org/hummingbird/hummingbird/archive/master.tar.gz";
     niri = {
       url = "github:sodiboo/niri-flake";
       inputs.nixpkgs.follows = "nixpkgs";
