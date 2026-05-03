@@ -11,7 +11,6 @@
       dms
       catppuccin
       appimage
-      otherDesktop
       firefox
     ];
 
@@ -20,6 +19,8 @@
       (pkgs.blender.override {
         rocmSupport = true;
       })
+      pkgs.element-desktop
+      pkgs.krita
     ];
 
     nixpkgs.config.allowUnfree = true;
