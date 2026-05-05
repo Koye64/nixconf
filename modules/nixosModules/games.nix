@@ -10,6 +10,7 @@
     };
 
     environment.systemPackages = [
+      pkgs.dolphin-emu
       pkgs.itch
       self.packages.${pkgs.stdenv.hostPlatform.system}.ryubing
     ];
