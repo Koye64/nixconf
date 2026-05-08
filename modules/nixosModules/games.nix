@@ -12,6 +12,7 @@
     environment.systemPackages = [
       pkgs.dolphin-emu
       pkgs.itch
+      pkgs.tetrio-desktop
       self.packages.${pkgs.stdenv.hostPlatform.system}.ryubing
     ];
   };
