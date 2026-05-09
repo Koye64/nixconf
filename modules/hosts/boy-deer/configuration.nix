@@ -12,16 +12,11 @@
       catppuccin
       appimage
       firefox
+      gamedev
     ];
 
     environment.systemPackages = [
-      pkgs.godotPackages_4_6.godot
-      (pkgs.blender.override {
-        rocmSupport = true;
-      })
-      pkgs.unityhub
       pkgs.element-desktop
-      pkgs.krita
     ];
 
     nixpkgs.config.allowUnfree = true;
