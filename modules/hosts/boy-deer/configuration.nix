@@ -19,6 +19,7 @@
       (pkgs.blender.override {
         rocmSupport = true;
       })
+      pkgs.unityhub
       pkgs.element-desktop
       pkgs.krita
     ];
