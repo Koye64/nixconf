@@ -13,6 +13,7 @@
       appimage
       firefox
       gamedev
+      desktop
     ];
 
     environment.systemPackages = [
