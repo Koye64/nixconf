@@ -14,10 +14,13 @@
       fastfetch
       hyfetch
 
+      tldr
+
       file
       zip
       unzip
       fzf
+      ripgrep
       eza
 
       git
