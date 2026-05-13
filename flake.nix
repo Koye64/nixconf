@@ -6,7 +6,7 @@
     wrapper-modules.url = "github:BirdeeHub/nix-wrapper-modules";
     catppuccin.url = "github:catppuccin/nix";
     ryubing = {
-      url = "https://git.ryujinx.app/projects/Ryubing/archive/master.tar.gz";
+      url = "https://git.ryujinx.app/api/v1/repos/projects/Ryubing/archive/2b929c55379b28a0ec56e4d405277dfcf197e322.tar.gz";
       flake = false;
     };
     hummingbird = {
