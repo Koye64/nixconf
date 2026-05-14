@@ -15,6 +15,7 @@
 
     environment.systemPackages = [
       pkgs.mpv
+      pkgs.keepassxc
     ];
   };
 }
