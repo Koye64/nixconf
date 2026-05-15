@@ -6,6 +6,9 @@
         extraPackages = with pkgs; [
           gamescope
         ];
+        extraCompatPackages = with pkgs; [
+          proton-ge-bin
+        ];
       };
     };
 
