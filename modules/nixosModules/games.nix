@@ -15,6 +15,7 @@
     environment.systemPackages = with pkgs; [
       dolphin-emu
       itch
+      prismlauncher
       tetrio-desktop
       self.packages.${stdenv.hostPlatform.system}.ryubing
     ];
