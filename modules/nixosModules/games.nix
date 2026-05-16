@@ -12,11 +12,11 @@
       };
     };
 
-    environment.systemPackages = [
-      pkgs.dolphin-emu
-      pkgs.itch
-      pkgs.tetrio-desktop
-      self.packages.${pkgs.stdenv.hostPlatform.system}.ryubing
+    environment.systemPackages = with pkgs; [
+      dolphin-emu
+      itch
+      tetrio-desktop
+      self.packages.${stdenv.hostPlatform.system}.ryubing
     ];
   };
 }
