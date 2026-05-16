@@ -14,6 +14,7 @@
       firefox
       gamedev
       desktop
+      vr
     ];
 
     environment.systemPackages = [
