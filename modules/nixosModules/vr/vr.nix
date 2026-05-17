@@ -4,7 +4,7 @@
       wivrn = {
         enable = true;
         openFirewall = true;
-        autoStart = false;
+        autoStart = true;
         config = {
           enable = true;
           json = (lib.mapAttrsRecursive (_: lib.mkDefault) (lib.importJSON ./config.json)) // {
