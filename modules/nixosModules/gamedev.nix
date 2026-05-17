@@ -6,6 +6,7 @@
         rocmSupport = true;
       })
       unityhub
+      p7zip # required for unityhub
       alcom
       krita
     ];

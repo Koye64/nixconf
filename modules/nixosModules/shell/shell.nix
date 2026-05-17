@@ -18,6 +18,7 @@
 
       file
       zip
+      p7zip
       unzip
       fzf
       ripgrep
