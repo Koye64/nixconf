@@ -1,5 +1,5 @@
 { self, inputs, ... }: {
-  flake.homeModules.dms = { pkgs, ... }: {
+  flake.homeModules.dms = { pkgs, lib, ... }: {
     imports = [
       inputs.dms.homeModules.dank-material-shell
       # dependent on niri flake
@@ -16,12 +16,8 @@
     programs.dank-material-shell = {
       enable = true;
 
-      settings = (builtins.fromJSON
-        (builtins.readFile ./settings.json)
-      );
-      session = (builtins.fromJSON
-        (builtins.readFile ./session.json)
-      );
+      settings = lib.importJSON ./settings.json;
+      session = lib.importJSON ./session.json;
 
       niri = {
         includes.enable = true;
