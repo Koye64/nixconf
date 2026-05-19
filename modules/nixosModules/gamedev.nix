@@ -9,6 +9,7 @@
       p7zip # required for unityhub
       alcom
       krita
+      blockbench
     ];
   };
 }
