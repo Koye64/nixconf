@@ -17,6 +17,7 @@
       vr
       printing
       distrobox
+      programming
     ];
 
     environment.systemPackages = [
