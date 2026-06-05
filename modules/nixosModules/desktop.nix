@@ -13,6 +13,10 @@
       ];
     };
 
+    qt.enable = true;
+    qt.style = "breeze";
+    qt.platformTheme = "qt5ct";
+
     environment.systemPackages = [
       pkgs.audacity
       pkgs.mpv

@@ -5,6 +5,8 @@
     ];
 
     catppuccin = {
+      enable = true;
+      autoEnable = false;
       accent = "mauve";
       flavor = "mocha";
       cache.enable = true;
@@ -12,9 +14,13 @@
       bat.enable = true;
       cava.enable = true;
       ghostty.enable = true;
+
       gtk.icon.enable = true;
+      qt5ct.enable = true;
     };
 
-    gtk.enable = true;
+    gtk.enable = lib.mkDefault true;
+    qt.enable = lib.mkDefault true;
+    qt.platformTheme.name = "qtct";
   };
 }
