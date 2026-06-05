@@ -14,8 +14,7 @@
     };
 
     qt.enable = true;
-    qt.style = "breeze";
-    qt.platformTheme = "qt5ct";
+    qt.style = null;
 
     environment.systemPackages = [
       pkgs.audacity
