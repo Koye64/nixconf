@@ -1,7 +1,7 @@
 { self, inputs, ... }: {
   flake.nixosModules.vencord = { pkgs, lib, ... }: {
     environment.systemPackages = [
-      (pkgs.discord.override {
+      (pkgs.discord-canary.override {
         withVencord = true;
       })
     ];
