@@ -19,6 +19,7 @@
     environment.systemPackages = [
       pkgs.audacity
       pkgs.mpv
+      pkgs.puddletag
       pkgs.keepassxc
     ];
   };
