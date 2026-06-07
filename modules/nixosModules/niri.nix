@@ -24,7 +24,7 @@
     programs.niri.package = pkgs.niri-unstable;
 
     qt.enable = true;
-    qt.style = "breeze";
+    qt.style = null;
 
     environment.systemPackages = with pkgs; [
       nautilus
