@@ -23,8 +23,12 @@
     programs.niri.enable = true;
     programs.niri.package = pkgs.niri-unstable;
 
+    qt.enable = true;
+
     environment.systemPackages = with pkgs; [
       nautilus
+      mpv
+      imv
       easyeffects
       wl-clipboard
       libsecret

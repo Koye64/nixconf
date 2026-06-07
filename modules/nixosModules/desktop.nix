@@ -13,12 +13,8 @@
       ];
     };
 
-    qt.enable = true;
-    qt.style = null;
-
     environment.systemPackages = [
       pkgs.audacity
-      pkgs.mpv
       pkgs.puddletag
       pkgs.keepassxc
     ];
