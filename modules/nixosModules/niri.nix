@@ -24,6 +24,7 @@
     programs.niri.package = pkgs.niri-unstable;
 
     qt.enable = true;
+    qt.platformTheme = "kde";
     qt.style = "breeze";
 
     environment.systemPackages = with pkgs; [
