@@ -15,8 +15,9 @@
 
     environment.systemPackages = [
       pkgs.audacity
-      pkgs.puddletag
+      pkgs.lmms-full
       pkgs.keepassxc
+      pkgs.puddletag
     ];
   };
 }
