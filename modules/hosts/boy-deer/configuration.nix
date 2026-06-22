@@ -19,6 +19,7 @@
       distrobox
       programming
       vm
+      flatpak
     ];
 
     environment.systemPackages = [
@@ -70,7 +71,6 @@
     };
 
     services.openssh.enable = true;
-    services.flatpak.enable = true; # necessary for distrobox-host-exec
 
     system.stateVersion = "25.11"; # Did you read the comment?
   };
