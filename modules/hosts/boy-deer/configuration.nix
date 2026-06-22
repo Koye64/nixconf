@@ -18,6 +18,7 @@
       printing
       distrobox
       programming
+      vm
     ];
 
     environment.systemPackages = [
