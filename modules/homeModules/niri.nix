@@ -149,8 +149,8 @@
           "Mod+P".action.focus-workspace-up = [ ];
           "Mod+MouseBack".action.focus-workspace-down = [ ];
           "Mod+MouseForward".action.focus-workspace-up = [ ];
-          "Mod+XF86AudioRaiseVolume".action.focus-workspace-down = [ ];
-          "Mod+XF86AudioLowerVolume".action.focus-workspace-up = [ ]; 
+          "Mod+XF86AudioRaiseVolume".action.focus-workspace-up = [ ]; 
+          "Mod+XF86AudioLowerVolume".action.focus-workspace-down = [ ];
 
           "Mod+Ctrl+Page_Down".action.move-column-to-workspace-down = [ ];
           "Mod+Ctrl+Page_Up".action.move-column-to-workspace-up = [ ];
