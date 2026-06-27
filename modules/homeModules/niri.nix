@@ -147,15 +147,22 @@
           "Mod+Page_Up".action.focus-workspace-up = [ ];
           "Mod+N".action.focus-workspace-down = [ ];
           "Mod+P".action.focus-workspace-up = [ ];
+          "Mod+MouseBack".action.focus-workspace-down = [ ];
+          "Mod+MouseForward".action.focus-workspace-up = [ ];
+
           "Mod+Ctrl+Page_Down".action.move-column-to-workspace-down = [ ];
           "Mod+Ctrl+Page_Up".action.move-column-to-workspace-up = [ ];
           "Mod+Ctrl+N".action.move-column-to-workspace-down = [ ];
           "Mod+Ctrl+P".action.move-column-to-workspace-up = [ ];
+          "Mod+Ctrl+MouseBack".action.move-column-to-workspace-down = [ ];
+          "Mod+Ctrl+MouseForward".action.move-column-to-workspace-up = [ ];
 
           "Mod+Shift+Page_Down".action.move-workspace-down = [ ];
           "Mod+Shift+Page_Up".action.move-workspace-up = [ ];
           "Mod+Shift+N".action.move-workspace-down = [ ];
           "Mod+Shift+P".action.move-workspace-up = [ ];
+          "Mod+Shift+MouseBack".action.move-workspace-down = [ ];
+          "Mod+Shift+MouseForward".action.move-workspace-up = [ ];
 
           "Mod+WheelScrollDown" = {
             cooldown-ms = 150;
